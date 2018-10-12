@@ -2,7 +2,8 @@
 # All Rights Reserved
 
 CPPFLAGS = -DNDEBUG=1 -D_GNU_SOURCE=1
-CXXFLAGS = -I../include -I$(OPENCV_INSTALL_PATH)/include -Wall -Werror -Wsign-compare -Wfloat-equal -Wno-unused-label -O3 -fPIC
+#CXXFLAGS = -I../include -I$(OPENCV_INSTALL_PATH)/include -Wall -Werror -Wsign-compare -Wfloat-equal -Wno-unused-label -O3 -fPIC
+CXXFLAGS = -I../include -I$(OPENCV_INSTALL_PATH)/include -Wall -Werror -Wsign-compare -Wno-unused-label -O3 -fPIC
 CFLAGS = $(CXXFLAGS) -Wmissing-prototypes
 LDFLAGS = -L../lib -L$(OPENCV_INSTALL_PATH)/lib
 LDLIBS = -lpthread -ldl -lrt -lmicrohttpd -lcurl
